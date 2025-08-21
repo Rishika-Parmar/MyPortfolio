@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishika Portfolio</title>
+  <link rel="stylesheet" href="script01.css">
+</head>
+<body>
+  <div class="slider">
+
+    <!-- Slide 1: Home -->
+    <section class="slide" id="home">
+      <div class="content">
+        <h1>Hi, I'm Rishika Parmar</h1>
+        <p>Welcome to my portfolio website 🚀</p>
+      </div>
+    </section>
+    <div class="back">
+    <nav class="navbar">
+        <div class="navbar-left">Rishika`s Portfolio</div>
+        <div class="navbar-right">
+            <button class="nav-button" onclick="scrollToSkills()">Skills</button>
+            <button class="nav-button" onclick="scrollToProjects()">Projects</button>
+            <button class="nav-button" onclick="scrollToContact()">Contact Information</button>
+        </div>
+    </nav>
+
+    <!-- Slide 2: About -->
+    <section class="slide" id="about">
+      <div class="content">
+        <h1>About Me</h1>
+        <p>I am passionate about frontend development<br><br> (HTML, CSS, JS) and also skilled in C, C++, and DCA.</p>
+      </div>
+    </section>
+
+    <!-- Slide 3: Skills -->
+    <section class="slide" id="skills">
+      <div class="content">
+        <h1> Skills</h1>
+        <ul>
+          <li>Frontend Development: HTML, CSS, JavaScript</li><br>
+          <li>C, C++ Programming</li><br>
+          <li>DCA (Diploma of Computer Application)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 4: Projects -->
+    <section class="slide" id="projects">
+      <div class="content">
+        <h1>My Projects</h1>
+        <p>✨ Tic Tac Toe Game</p>
+        <p>✨ Multi-Game Mini Web Project</p>
+      </div>
+    </section>
+
+    <!-- Slide 5: Contact -->
+    <section class="slide" id="contact">
+      <div class="content">
+        <h1>Contact Me</h1>
+        <p>Email: <a href="mailto:prishika685@gmail.com">prishika685@gmail.com</a></p>
+        <p>Phone: 9201411556</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/rishika-parmar-ab23b6362">Rishika Parmar </a></p>
+      </div>
+    </section>
+
+  </div>
+ <div class="wave-background">
+  <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <path fill="rgba(255,255,255,0.2)" d="M0,160L60,165.3C120,171,240,181,360,170.7C480,160,600,128,720,106.7C840,85,960,75,1080,90.7C1200,107,1320,149,1380,170.7L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+  </svg>
+</div>
+
+  <!-- Contact Section (Last Slide) -->
+<section id="contact">
+  <div class="contact-container">
+    <h2>Get In Touch</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<style>
+  #contact {
+    background: rgb(0,0,33); /* Tumhara portfolio background */
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-container {
+    background:rgb(1, 1, 28);
+    padding: 90px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(199, 184, 184, 0.3);
+  }
+
+  #contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #f8f0f4; /* Pink heading */
+  }
+
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #contact input,
+  #contact textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+  }
+
+  #contact button {
+    background: #ebe6e9; /* Pink Button */
+    color: rgb(18, 18, 18);
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+
+  #contact button:hover {
+    background: #e60073;
+  }
+</style>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Thank you! Your message has been sent.");
+  });
+</script>
+  
+</body>
+</html>
